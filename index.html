@@ -6,6 +6,17 @@
 	<title>First Angular</title>
 </head>
 <body ng-controller="mainCtrl">
+	
+	<h1>My Friends</h1>
+	
+	<div ng-repeat="friend in friends">
+		<p>{{friend}}</p>
+	</div>
+	<input type="text" ng-model="newName"></input>
+	<button ng-click="addFriend(newName)"></button>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+	<script src="JS/app.js"></script>
+	<script src="JS/mainCtrl.js"></script>
 </body>
 </html>
