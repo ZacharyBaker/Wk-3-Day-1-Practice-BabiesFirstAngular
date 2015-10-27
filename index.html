@@ -10,7 +10,7 @@
 	<h1>My Friends</h1>
 	
 	<div ng-repeat="friend in friends">
-		<p>{{friend}}</p>
+		<p>{{friend | uppercase}}</p>
 	</div>
 	<input type="text" ng-model="newName"></input>
 	<button ng-click="addFriend(newName)"></button>
